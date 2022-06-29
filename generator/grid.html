@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Crossword Generator</title>
+
+    <link rel="stylesheet" href="./src/style.css" type="text/css">
+    <link rel="stylesheet" href="./src/tailwind.min.css" type="text/css">
+    <script src="./src/jquery-3.6.0.min.js"></script>
+    <script src="./src/main.js"></script>
+
+    <!-- <script src="./src/script.js"></script> -->
+    <script>
+        window.DISABLE_TOOLTIP = true;
+    </script>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="flex-1 bg-gray-200 p-4 m-4">
+          <!--   <input type="checkbox" id="rtl_check" name="rtl_check" value="yes">
+            <label for="rtl_check"> RTL</label><br> -->
+            <span class="text-lg font-medium">Crossword</span>
+            <textarea class="text-black" name="words" cols="40" rows="10" id="id_words"></textarea>
+            <span class="text-lg font-medium">Grid</span>
+            <textarea class="text-black" name="words" cols="40" rows="5" id="id_grids"></textarea>
+            <span class="text-lg font-medium">Words</span>
+            <textarea class="text-black" name="words" cols="40" rows="10" id="id_words_data"></textarea>
+            <!-- <button id="rev" class="p-1 mt-1 bg-blue-200">Reverse String</button> -->
+        </div>
+        <div class="flex-1 bg-gray-200 p-4 m-4">
+            <h3 class="text-lg font-medium">Preview</h3>
+            <label class="text-lg font-medium">Shift :</label>
+
+            <span role="button" tabindex="0" aria-label="Previous crossword layout" id="shift-left">◀</span>
+            <span role="button" tabindex="0" aria-label="Next crossword layout" id="shift-right">▶</span>
+
+            <div id="preview-box">
+            </div>
+            <h3 id="preview-header">
+                <span role="button" tabindex="0" aria-label="Previous crossword layout" id="seed-left">◀</span>
+                <span role="button" tabindex="0" aria-label="Next crossword layout" id="seed-right">▶</span>
+            </h3>
+        </div>
+    </div>
+
+</body>
+
+</html>
